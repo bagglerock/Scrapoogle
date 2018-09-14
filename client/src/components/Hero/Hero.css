@@ -1,0 +1,25 @@
+.container {
+    background: url(../../images/bwpaperorigami.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 2px solid var(--red);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-family: 'Fredericka the Great', cursive;
+    background-color: rgba(200, 200, 200, 0.7);
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    letter-spacing: .1rem;
+    color: white;
+    background-color: rgba(25, 25, 25, .7);
+    padding: .5rem 0;
+}
