@@ -1,6 +1,6 @@
 const router = require("express").Router();
 
-const google = require("./google/google");
+const google = require("./google");
 
 router.use("/google", google);
 
