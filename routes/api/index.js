@@ -1,7 +1,7 @@
 const router = require("express").Router();
 
-const google = require("./google/google");
+const scrapers = require("./scrapers");
 
-router.use("/google", google);
+router.use("/scrapers", scrapers);
 
 module.exports = router;

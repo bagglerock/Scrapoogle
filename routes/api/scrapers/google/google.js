@@ -1,8 +1,10 @@
 const router = require("express").Router();
-const googleScraper = require("../../../controllers/googleScraper");
+const googleScraper = require("../../../../controllers/googleScraper");
 
 // router.route("/google").post(googleScraper.getArticles);
 
-router.route("/google").get(googleScraper.test);
+router
+    .route("/")
+    .post(googleScraper.test);
 
 module.exports = router;
