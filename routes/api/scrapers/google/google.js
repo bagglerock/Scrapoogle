@@ -5,6 +5,6 @@ const googleScraper = require("../../../../controllers/googleScraper");
 
 router
     .route("/")
-    .post(googleScraper.test);
+    .post(googleScraper.getArticles);
 
 module.exports = router;
