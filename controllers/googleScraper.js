@@ -9,7 +9,7 @@ module.exports = {
         axios.get("https://news.google.com/")
         .then(response => {
             let $ = cheerio.load(response.data);
-            $("article").each(function(i, element) {
+            $("article").each(function() {
                 let result = {};
                 result.title = $(this).children("div").children("div").children("h4").children("a").children("span").text();
                 result.link = $(this).children("div").children("div").children("h4").children("a").attr("href");
@@ -20,7 +20,7 @@ module.exports = {
                 }
 
             })
-            res.send(scrapedArticles);
+            res.json(scrapedArticles);
 
         })
 
