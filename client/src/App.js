@@ -1,59 +1,29 @@
-import React, { Component } from "react";
+import React from "react";
 
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import Home from "./pages/Home/Home";
 import Hero from "../src/components/Hero/Hero";
 import Nav from "../src/components/Nav/Nav";
-import Results from "../src/components/Results/Results";
-
-import scrape from "./utils/scrape";
 
 import "./App.css";
 
-class App extends Component {
-
-  state = {
-    articles: []
-  }
-
-  componentDidMount() {
-    this.getArticles().then(res => {
-      this.setState({
-        articles: res.data
-      })
-    })
-  }
-
-  getArticles = () => {
-    let promise = new Promise((resolve, reject) => {
-      scrape.getArticles().then(res => {
-        resolve(res);
-      })
-      .catch(err => {
-        reject(err);
-      })
-    })
-    return promise;
-  }
-
-  render() {
-
-    console.log(this.state.articles);
-
-    return (
-      <div>
+const App = () => {
+  
+  return(
+    <Router>
+      <main>
         <Nav/>
         <Hero/>
-        <div>
-          {this.state.articles.map((article, i)=> (
-            <Results
-              key={i}
-              title={article.title}
-              summary={article.summary}
-          />
-          ))}
-        </div>
-      </div>
-    )
-  }
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route component={Home}/>
+        </Switch>
+      </main>
+    </Router>
+  )
+
+  
 }
 
 export default App;
