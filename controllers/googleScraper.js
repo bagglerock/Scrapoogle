@@ -20,7 +20,6 @@ module.exports = {
                 }
 
             })
-            console.log("hello");
             res.json(scrapedArticles);
 
         })
