@@ -1,5 +1,23 @@
 .container {
-    padding: 1em;
-    border: solid 1px black;
+    text-align: center;
+    padding: 2rem;
+    border: black solid 1px;
     margin: 1em;
+}
+
+.container:hover {
+    border: solid darkorange 1px;
+}
+
+.title {
+    height: 8rem;
+}
+
+.title>h1 {
+    font-size: 2rem;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.summary {
+    height: 6rem;
 }
