@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-
 import Results from "../../../src/components/Results/Results";
 
 import scrape from "../../utils/scrape";
@@ -38,9 +37,8 @@ class Home extends Component{
         console.log(this.state.articles);
     
         return (
-          <div>
             <div>
-              {this.state.articles.map((article, i)=> (
+              {this.state.articles.map((article, i) => (
                 <Results
                   key={i}
                   title={article.title}
@@ -48,7 +46,6 @@ class Home extends Component{
               />
               ))}
             </div>
-          </div>
         )
       }
 
