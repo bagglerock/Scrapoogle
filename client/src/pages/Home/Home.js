@@ -42,6 +42,7 @@ class Home extends Component{
                 <Results
                   key={i}
                   title={article.title}
+                  link={article.link}
                   summary={article.summary}
               />
               ))}

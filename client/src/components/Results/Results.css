@@ -13,10 +13,17 @@
     height: 8rem;
 }
 
-.title>h1 {
+.title>a {
+    text-decoration: none;
+    color: black;
+}
+
+.title>a>h1 {
     font-size: 2rem;
     font-family: 'Libre Baskerville', serif;
 }
+
+
 
 .summary {
     height: 6rem;

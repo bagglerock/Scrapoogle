@@ -5,7 +5,7 @@ import results from "./Results.css";
 const Results = props => (
     <div className={results.container}>
         <div className={results.title}>
-            <h1>{props.title}</h1>
+            <a href={props.link} target="_blank"><h1>{props.title}</h1></a>
         </div>
         <div className={results.summary}>
             <p>{props.summary}</p>
