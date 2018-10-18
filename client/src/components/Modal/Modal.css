@@ -1,0 +1,53 @@
+/** General Modal Stuff **/
+
+.modal {
+    /* display: none; */
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0px;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modalContent {
+    background-color: white;
+    margin: 6rem auto 20% auto;
+    border: 1px solid black;
+    width: 80%;
+    color: black;
+    border-radius: 10px;
+}
+
+.modalCloseContainer {
+    background-color: maroon;
+    border-bottom: solid black 1px;
+    color: white;
+    text-align: right;
+    padding: 1rem;
+}
+
+.modalButtonContainer {
+    background-color: #eee;
+    text-align: left;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: auto auto;
+    border-radius: 10px;
+}
+
+.modalButtonContainer div:nth-child(2){
+    text-align: right;
+
+}

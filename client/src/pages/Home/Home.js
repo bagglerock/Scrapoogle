@@ -33,9 +33,7 @@ class Home extends Component{
       }
     
       render() {
-    
-        console.log(this.state.articles);
-    
+
         return (
             <div>
               {this.state.articles.map((article, i) => (
